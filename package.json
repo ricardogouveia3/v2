@@ -3,7 +3,9 @@
   "version": "2.2.0",
   "description": "Personal website for ricardogouveia3",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "push-dir": "^0.4.1"
+  },
   "devDependencies": {
     "browser-sync": "^2.24.4",
     "gulp": "^3.9.1",
@@ -21,7 +23,8 @@
   },
   "sasslintConfig": ".sass-lint.yml",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "push-dir --dir=build --branch=gh-pages --cleanup"
   },
   "repository": {
     "type": "git",
